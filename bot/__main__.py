@@ -62,8 +62,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Kristy Cloud", "https://telegram.dog/KristyCloud")
-    buttons.buildbutton("Log Channel", "https://t.me/KristyDump")
+    buttons.buildbutton("Zeus Bots", "https://t.me/ZeusBotsNetwork")
+    buttons.buildbutton("Dump Channel", "https://t.me/+59V11bqMfR4wM2Zh")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
