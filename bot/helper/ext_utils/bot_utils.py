@@ -127,7 +127,7 @@ def get_readable_message():
                 globals()['PAGE_NO'] -= 1
             START = COUNT
         for index, download in enumerate(list(download_dict.values())[START:], start=1):
-            msg += f"<b>═══════ @KristyCloud ═══════\n\nName : {download.name()}</b>"
+            msg += f"<b>@ZeusBotsNetwork\n\nName : {download.name()}</b>"
             msg += f"\n<b>Status : {download.status()}</b>"
             if download.status() not in [
                 MirrorStatus.STATUS_ARCHIVING,
@@ -160,7 +160,7 @@ def get_readable_message():
                 msg += f" | <b>Uploaded : {get_readable_file_size(download.torrent_info().uploaded)}</b>"
                 msg += f"\n<b>Ratio : {round(download.torrent_info().ratio, 3)}</b>"
                 msg += f" | <b>Time : {get_readable_time(download.torrent_info().seeding_time)}</b>"
-                msg += f"\n<b>To Cancel : /{BotCommands.CancelMirror} {download.gid()}</b>"
+                msg += f"\n<b>To Cancel :</b> `/{BotCommands.CancelMirror} {download.gid()}`"
             else:
                 msg += f"\n<b>Size : {download.size()}</b>"
             msg += "\n\n"
